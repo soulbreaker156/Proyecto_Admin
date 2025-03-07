@@ -1,0 +1,74 @@
+*{
+    font-family: Fredoka;
+}
+body{
+    background: linear-gradient(to bottom, #6ca6a8, #d5c1d3);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
+    
+}
+.Contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+}
+.login {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 60px 30px 90px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    backdrop-filter: blur(10px);
+}
+.datos{
+    font-size: 20px;
+}
+.login h1 {
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.login label {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    width: 95%;
+}
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.login button {
+    width: 60%;
+    padding: 10px;
+    background-color: #7f9ea4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.login button:hover {
+    background-color: #698a91;
+}
+.registro{
+    font-size: 15px;
+}
+.registro a{
+    text-decoration: none;
+    color:#0d9cce;
+}
