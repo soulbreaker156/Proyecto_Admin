@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Css/styles.css">
+    <link rel="stylesheet" href="./Css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <title>Proyecto Administracion de tecnologias</title>
 </head>
@@ -11,18 +11,18 @@
     <div class="Contenedor">
         <div class="login">
             <h1 class="Titulo">Iniciar sesion</h1>
-            <form action="POST">
+            <form action="sesion.php" method="POST">
                 <label>
                     <span class="datos">Usuario</span><br>
-                    <input type="text" placeholder="Ingrese su Usuario"><br>
+                    <input type="text" name="user" placeholder="Ingrese su Usuario"><br>
                 </label>
                 <label>
                     <span class="datos">Contraseña</span><br>
-                    <input type="text" placeholder="Ingrese su Contraseña"><br>
+                    <input type="text" name="pass" placeholder="Ingrese su Contraseña"><br>
                 </label>
                 <button type="submit">Inciar sesion</button>
             </form>
-            <span class="registro">No te has registrado? <a href="registro.html">registrate</a></span>
+            <span class="registro">No te has registrado? <a href="registro.php">registrate</a></span>
         </div>
         
     </div>
