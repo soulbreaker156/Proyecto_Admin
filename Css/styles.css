@@ -1,0 +1,116 @@
+*{
+    font-family: Fredoka;
+}
+body{
+    background: linear-gradient(to bottom, #6ca6a8, #d5c1d3);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
+    
+}
+.Contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+}
+.login {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 150px 130px 110px 130px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    backdrop-filter: blur(10px);
+}
+@media (max-width: 393px){
+    .login{padding: 90px 60px 90px 60px;}
+    
+}
+.datos{
+    margin-left: -80px;
+    font-size: 30px;
+}
+@media (max-width: 393px) {
+    .datos{
+        font-size: 20px;
+        margin-left: -40px;
+    } 
+}
+.Titulo{
+    margin-left: -90px;
+    text-align: left;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+@media (max-width: 393px){
+    .Titulo{margin-left: -30px;
+        margin-top: -55px;
+    }   
+}
+.login label {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    width: 160%;
+}
+@media(max-width: 393px){
+    .login label{
+        width:120%;
+    }
+}
+.login input {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 12px 15px 12px;
+    margin: 0px 0;
+    margin-left: -80px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+@media(max-width: 393px){
+    .login input{
+        margin-left: -40px;
+        font-size: 17px;
+    }
+}
+.login button {
+    width: 140%;
+    padding: 12px 10px 13px 10px;
+    background-color: #7f9ea4;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+@media(max-width: 393px){
+    .login button{
+        width:120%;
+        padding: 12px;
+        margin-left: -26px;
+    }
+}
+.login button:hover {
+    background-color: #698a91;
+}
+.registro{
+    font-size: 17px;
+    width: 800px;
+}
+@media (max-width: 393px){
+    .registro{font-size: 17px;}
+}
+.registro a{
+    text-decoration: none;
+    color:#0d9cce;
+}
