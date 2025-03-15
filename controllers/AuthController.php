@@ -1,5 +1,6 @@
 <?php
 require '../models/usuarioModel.php';
+session_start();
 //Objeto que hace el login
 class AuthController {
     public function login(){
@@ -18,10 +19,19 @@ class AuthController {
         $resultado= $usuario->iniciarSesion($_POST['usuario'],$_POST['contrasena']);
         //Verifica el resultado de vuelto y hace algo dependiendo de el.
         if($resultado === true) {
-            header('Location:../views/inicio/inicio.php');
+            $_SESSION['login'] = [
+                'tipo' => 'success',
+                'texto' => 'Inicio de sesion exitoso redirigiendo...',
+            ];
+            header("Location: ../views/inicio/inicio.php");
             exit();
         }else{
-            echo "<script>alert('$resultado'); window.location.href = '../views/index/index.php';</script>";
+            $_SESSION['login'] = [
+                'tipo' => 'error',
+                'texto' => 'Datos Incorrectos',
+            ];
+            header("Location: ../views/login/login.php");
+            exit();
         }
     }
 }
